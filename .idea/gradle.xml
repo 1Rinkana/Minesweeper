@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Minesweeper/task" />
+            <option value="$PROJECT_DIR$/Minesweeper/task/build/classes/java" />
+            <option value="$PROJECT_DIR$/Minesweeper/task/build/classes/kotlin" />
+            <option value="$PROJECT_DIR$/Minesweeper/task/build/generated/sources/annotationProcessor/java" />
+            <option value="$PROJECT_DIR$/Minesweeper/task/build/generated/sources/headers/java" />
+            <option value="$PROJECT_DIR$/Minesweeper/task/build/reports/tests" />
+            <option value="$PROJECT_DIR$/Minesweeper/task/build/test-results" />
+            <option value="$PROJECT_DIR$/Minesweeper/task/build/tmp" />
+            <option value="$PROJECT_DIR$/Topics/Extension functions/Delegation" />
+            <option value="$PROJECT_DIR$/Topics/Extension functions/Fridge" />
+            <option value="$PROJECT_DIR$/Topics/Extension functions/Last digit" />
+            <option value="$PROJECT_DIR$/Topics/Extension functions/Overriding member function" />
+            <option value="$PROJECT_DIR$/Topics/Extension functions/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Apple pie" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Declaring Long" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Desks" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Divide nuts equally between squirrels" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/How many nuts will be left after division" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Integer division" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Next even number" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Reversing a number" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/The first digit of a two-digit number" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/The last digit of a number" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/The number of tens" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/The sum of digits" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Time difference" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Time format" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Underscore" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Underscore (1)" />
+            <option value="$PROJECT_DIR$/Topics/Integers in action/Unsigned integers" />
+            <option value="$PROJECT_DIR$/Topics/String formatting/Correct printout" />
+            <option value="$PROJECT_DIR$/Topics/String formatting/Dynamic Double formatting" />
+            <option value="$PROJECT_DIR$/Topics/String formatting/Floating point numbers format string" />
+            <option value="$PROJECT_DIR$/Topics/String formatting/Format Double with a comma and 2 decimal digits" />
+            <option value="$PROJECT_DIR$/Topics/String formatting/Format String" />
+            <option value="$PROJECT_DIR$/Topics/String formatting/Format a table" />
+            <option value="$PROJECT_DIR$/Topics/String formatting/Integer format string" />
+            <option value="$PROJECT_DIR$/Topics/String formatting/Octal and hexadecimal" />
+            <option value="$PROJECT_DIR$/Topics/String formatting/Theory" />
+            <option value="$PROJECT_DIR$/Topics/String formatting/Valid format specifiers" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

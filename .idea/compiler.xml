@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="Minesweeper.Minesweeper-task-build-classes-java.main" target="16" />
+      <module name="Minesweeper.Minesweeper-task-build-classes-kotlin.main" target="16" />
+      <module name="Minesweeper.Minesweeper-task-build-generated-sources-annotationProcessor-java.main" target="16" />
+      <module name="Minesweeper.Minesweeper-task-build-generated-sources-headers-java.main" target="16" />
+      <module name="Minesweeper.Minesweeper-task-build-reports-tests.main" target="16" />
+      <module name="Minesweeper.Minesweeper-task-build-test-results.main" target="16" />
+      <module name="Minesweeper.Minesweeper-task-build-tmp.main" target="16" />
+      <module name="Minesweeper.Minesweeper-task.main" target="16" />
+      <module name="Minesweeper.Topics-Extension_functions-Delegation.main" target="16" />
+      <module name="Minesweeper.Topics-Extension_functions-Fridge.main" target="16" />
+      <module name="Minesweeper.Topics-Extension_functions-Last_digit.main" target="16" />
+      <module name="Minesweeper.Topics-Extension_functions-Overriding_member_function.main" target="16" />
+      <module name="Minesweeper.Topics-Extension_functions-Theory.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Apple_pie.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Declaring_Long.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Desks.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Divide_nuts_equally_between_squirrels.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-How_many_nuts_will_be_left_after_division.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Integer division.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Next_even_number.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Reversing_a_number.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-The_first_digit_of_a_two-digit_number.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-The_last_digit_of_a_number.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-The_number_of_tens.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-The_sum_of_digits.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Theory.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Time_difference.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Time_format.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Underscore.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Underscore__1_.main" target="16" />
+      <module name="Minesweeper.Topics-Integers_in_action-Unsigned_integers.main" target="16" />
+      <module name="Minesweeper.Topics-String_formatting-Correct_printout.main" target="16" />
+      <module name="Minesweeper.Topics-String_formatting-Dynamic_Double_formatting.main" target="16" />
+      <module name="Minesweeper.Topics-String_formatting-Floating_point_numbers_format_string.main" target="16" />
+      <module name="Minesweeper.Topics-String_formatting-Format_a_table.main" target="16" />
+      <module name="Minesweeper.Topics-String_formatting-Format_Double_with_a_comma_and_2_decimal_digits.main" target="16" />
+      <module name="Minesweeper.Topics-String_formatting-Format_String.main" target="16" />
+      <module name="Minesweeper.Topics-String_formatting-Integer_format_string.main" target="16" />
+      <module name="Minesweeper.Topics-String_formatting-Octal_and_hexadecimal.main" target="16" />
+      <module name="Minesweeper.Topics-String_formatting-Theory.main" target="16" />
+      <module name="Minesweeper.Topics-String_formatting-Valid_format_specifiers.main" target="16" />
+      <module name="Minesweeper.util.main" target="16" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

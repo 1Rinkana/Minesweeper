@@ -1,0 +1,7 @@
+# Project exclude paths
+/.gradle/
+/Minesweeper/task/build/
+/Minesweeper/task/out/
+/Minesweeper/task/out/production/classes/
+/Topics/String formatting/Format a table/out/
+/Topics/String formatting/Format a table/out/production/classes/
