@@ -19,7 +19,7 @@ fun mineAction(row: Int, cell: Int) {   // action is mine
     playersField()
 }
 
-fun freeAction(row: Int, cell: Int) {
+fun freeAction(row: Int, cell: Int) {  // action is free
     if (isDigit(staticField[row][cell])) {
         fieldForGame[row][cell] = staticField[row][cell]
         playersField()
@@ -160,5 +160,3 @@ fun newValue(row: Int, cell: Int): String {
         "/"
     } else "1"
 }
-
-// прописать везде континью
