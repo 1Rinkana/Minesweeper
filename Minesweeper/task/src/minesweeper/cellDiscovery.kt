@@ -32,59 +32,33 @@ fun freeAction(row: Int, cell: Int) {  // action is free
 }
 
 fun cellDiscovery() {  // action is free
-    for ((rowIndex, row) in staticField.withIndex()) {
-        for ((cellIndex, cell) in staticField.withIndex()) {
-            if (fieldForGame[rowIndex][cellIndex] == "/") {
-                doWhatIsPossible(rowIndex, cellIndex)
+    repeat(2) {
+        for (row in 0 until fieldSize) {
+            for (cell in 0 until fieldSize) {
+                if (fieldForGame[row][cell] == "/") {
+                    doWhatIsPossible(row, cell)
+                }
             }
         }
-    }
-    for ((rowIndex, row) in staticField.withIndex()) {
-        for (cell in 8 downTo 0) {
-            if (fieldForGame[rowIndex][cell] == "/") {
-                doWhatIsPossible(rowIndex, cell)
+        for (row in 0 until fieldSize - 1) {
+            for (cell in fieldSize - 1 downTo 0) {
+                if (fieldForGame[row][cell] == "/") {
+                    doWhatIsPossible(row, cell)
+                }
             }
         }
-    }
-    for (row in 8 downTo 0) {
-        for ((cellIndex, cell) in staticField.withIndex()) {
-            if (fieldForGame[row][cellIndex] == "/") {
-                doWhatIsPossible(row, cellIndex)
+        for (row in fieldSize - 1 downTo 0) {
+            for (cell in 0 until fieldSize) {
+                if (fieldForGame[row][cell] == "/") {
+                    doWhatIsPossible(row, cell)
+                }
             }
         }
-    }
-    for (row in 8 downTo 0) {
-        for (cell in 8 downTo 0) {
-            if (fieldForGame[row][cell] == "/") {
-                doWhatIsPossible(row, cell)
-            }
-        }
-    }
-    for ((rowIndex, row) in staticField.withIndex()) {
-        for ((cellIndex, cell) in staticField.withIndex()) {
-            if (fieldForGame[rowIndex][cellIndex] == "/") {
-                doWhatIsPossible(rowIndex, cellIndex)
-            }
-        }
-    }
-    for ((rowIndex, row) in staticField.withIndex()) {
-        for (cell in 8 downTo 0) {
-            if (fieldForGame[rowIndex][cell] == "/") {
-                doWhatIsPossible(rowIndex, cell)
-            }
-        }
-    }
-    for (row in 8 downTo 0) {
-        for ((cellIndex, cell) in staticField.withIndex()) {
-            if (fieldForGame[row][cellIndex] == "/") {
-                doWhatIsPossible(row, cellIndex)
-            }
-        }
-    }
-    for (row in 8 downTo 0) {
-        for (cell in 8 downTo 0) {
-            if (fieldForGame[row][cell] == "/") {
-                doWhatIsPossible(row, cell)
+        for (row in fieldSize - 1 downTo 0) {
+            for (cell in fieldSize - 1 downTo 0) {
+                if (fieldForGame[row][cell] == "/") {
+                    doWhatIsPossible(row, cell)
+                }
             }
         }
     }
@@ -92,14 +66,14 @@ fun cellDiscovery() {  // action is free
 
 fun doWhatIsPossible(row: Int, cell: Int) {
     if (row == 0 && cell == 0) { // top left
-        fieldForGame[row][cell + 1] = newValue(row, cell + 1)
-        fieldForGame[row + 1][cell + 1] = newValue(row + 1, cell + 1)
-        fieldForGame[row + 1][cell] = newValue(row + 1, cell)
+        fieldForGame[row][1] = newValue(row, 1)
+        fieldForGame[1][1] = newValue(1, 1)
+        fieldForGame[1][cell] = newValue(1, cell)
     }
     else if (row == 0 && cell == fieldSize - 1) { // top right
         fieldForGame[row][cell - 1] = newValue(row, cell - 1)
-        fieldForGame[row + 1][cell - 1] = newValue(row + 1, cell - 1)
-        fieldForGame[row + 1][cell] = newValue(row + 1, cell)
+        fieldForGame[1][cell - 1] = newValue(1, cell - 1)
+        fieldForGame[1][cell] = newValue(1, cell)
     }
     else if (row == fieldSize - 1 && cell == fieldSize - 1) { // down right
         fieldForGame[row][cell - 1] = newValue(row, cell - 1)
@@ -108,14 +82,14 @@ fun doWhatIsPossible(row: Int, cell: Int) {
     }
     else if (row == fieldSize - 1 && cell == 0) {
         fieldForGame[row - 1][cell] = newValue(row - 1, cell) // down left
-        fieldForGame[row - 1][cell + 1] = newValue(row - 1, cell + 1)
-        fieldForGame[row][cell + 1] = newValue(row, cell + 1)
+        fieldForGame[row - 1][1] = newValue(row - 1, 1)
+        fieldForGame[row][1] = newValue(row, 1)
     }
     else if (row == 0) { // up
         fieldForGame[row][cell - 1] = newValue(row, cell - 1)
-        fieldForGame[row + 1][cell - 1] = newValue(row + 1, cell - 1)
-        fieldForGame[row + 1][cell] = newValue(row + 1, cell)
-        fieldForGame[row + 1][cell + 1] = newValue(row + 1, cell + 1)
+        fieldForGame[1][cell - 1] = newValue(1, cell - 1)
+        fieldForGame[1][cell] = newValue(1, cell)
+        fieldForGame[1][cell + 1] = newValue(1, cell + 1)
         fieldForGame[row][cell + 1] = newValue(row, cell + 1)
     }
     else if (row == fieldSize - 1) { // down
@@ -127,9 +101,9 @@ fun doWhatIsPossible(row: Int, cell: Int) {
     }
     else if (cell == 0) { // left
         fieldForGame[row - 1][cell] = newValue(row - 1, cell)
-        fieldForGame[row - 1][cell + 1] = newValue(row - 1, cell + 1)
-        fieldForGame[row][cell + 1] = newValue(row, cell + 1)
-        fieldForGame[row + 1][cell + 1] = newValue(row + 1, cell + 1)
+        fieldForGame[row - 1][1] = newValue(row - 1, 1)
+        fieldForGame[row][1] = newValue(row, 1)
+        fieldForGame[row + 1][1] = newValue(row + 1, 1)
         fieldForGame[row + 1][cell] = newValue(row + 1, cell)
     }
     else if (cell == fieldSize - 1) { // right

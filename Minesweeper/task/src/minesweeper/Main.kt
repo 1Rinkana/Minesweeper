@@ -12,10 +12,11 @@ val fieldForGame = MutableList(fieldSize) {
 
 lateinit var staticField: List<List<String>>
 
+var amountOfClosedMines = 0
+
 fun main() {
     game()
 }
-var amountOfClosedMines = 0
 
 fun game() {
     val mines = readln().toInt()
@@ -52,14 +53,14 @@ fun game() {
 fun isItWin(mines: Int): Boolean {
     var ans = true
     var count = 0
-    for ((rowIndex, row) in staticField.withIndex()) {
-        for ((cellIndex, cell) in staticField.withIndex()) {
-            if (staticField[rowIndex][cellIndex] == "X"  && fieldForGame[rowIndex][cellIndex] != "." || fieldForGame[rowIndex][cellIndex] != "*") ans = false
+    for (row in 0 until fieldSize) {
+        for (cell in 0 until fieldSize) {
+            if (staticField[row][cell] == "X"  && fieldForGame[row][cell] != "." || fieldForGame[row][cell] != "*") ans = false
         }
     }
-    for ((rowIndex, row) in staticField.withIndex()) {
-        for ((cellIndex, cell) in staticField.withIndex()) {
-            if (fieldForGame[rowIndex][cellIndex] == ".") count++
+    for (row in 0 until fieldSize) {
+        for (cell in 0 until fieldSize) {
+            if (fieldForGame[row][cell] == ".") count++
         }
     }
     if (count > mines) ans = false
@@ -69,9 +70,9 @@ fun isItWin(mines: Int): Boolean {
 fun createField(m: Int, firstCell: Int, firstRow: Int) {
     var mines = m
     while (mines > 0) {
-        val row = Random.nextInt(0, 9)
-        val cell = Random.nextInt(0, 9)
-        if (row == firstRow && cell == firstCell) continue //central пропсиать еще 8 вариантов
+        val row = Random.nextInt(0, fieldSize)
+        val cell = Random.nextInt(0, fieldSize)
+        if (row == firstRow && cell == firstCell) continue //central
         if (row == firstRow - 1 && cell == firstCell) continue //north
         if (row == firstRow - 1 && cell == firstCell + 1) continue //north-east
         if (row == firstRow && cell == firstCell + 1) continue //east
@@ -122,9 +123,9 @@ fun helpInTheGame(row: Int, cell: Int) {
 }
 
 fun gameIsLost() {
-    for ((rowIndex, row) in staticField.withIndex()) {
-        for ((cellIndex, cell) in staticField.withIndex()) {
-            if (staticField[rowIndex][cellIndex] == "X") fieldForGame[rowIndex][cellIndex] = "X"
+    for (row in 0 until fieldSize) {
+        for (cell in 0 until fieldSize) {
+            if (staticField[row][cell] == "X") fieldForGame[row][cell] = "X"
         }
     }
 }
